@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -67,10 +67,10 @@
 				2C053E8B288095A8002E53C0 /* LaunchBox.entitlements */,
 				2C053E87288095A5002E53C0 /* ContentView.swift */,
 				2C053E80288095A5002E53C0 /* LaunchBoxApp.swift */,
-				2C053E82288095A5002E53C0 /* Persistence.swift */,
 				2C053E89288095A8002E53C0 /* Assets.xcassets */,
-				2C053E84288095A5002E53C0 /* LaunchBox.xcdatamodeld */,
+				2C6466C12880A33D00378AF0 /* Models */,
 				2C053E8C288095A8002E53C0 /* Preview Content */,
+				2C6466C32880A48700378AF0 /* Utilities */,
 			);
 			path = LaunchBox;
 			sourceTree = "<group>";
@@ -89,6 +89,30 @@
 				2C053E9928809723002E53C0 /* pre_compile.sh */,
 			);
 			path = Scripts;
+			sourceTree = "<group>";
+		};
+		2C6466C12880A33D00378AF0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C6466C22880A34200378AF0 /* CoreData */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C6466C22880A34200378AF0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2C053E84288095A5002E53C0 /* LaunchBox.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		2C6466C32880A48700378AF0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2C053E82288095A5002E53C0 /* Persistence.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +151,7 @@
 				};
 			};
 			buildConfigurationList = 2C053E78288095A5002E53C0 /* Build configuration list for PBXProject "LaunchBox" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
