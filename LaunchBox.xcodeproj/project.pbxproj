@@ -13,6 +13,8 @@
 		2C053E88288095A5002E53C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C053E87288095A5002E53C0 /* ContentView.swift */; };
 		2C053E8A288095A8002E53C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C053E89288095A8002E53C0 /* Assets.xcassets */; };
 		2C053E8E288095A8002E53C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C053E8D288095A8002E53C0 /* Preview Assets.xcassets */; };
+		2C053E95288096E5002E53C0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2C053E94288096E5002E53C0 /* LICENSE */; };
+		2C053E97288096EF002E53C0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C053E96288096EF002E53C0 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		2C053E89288095A8002E53C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C053E8B288095A8002E53C0 /* LaunchBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchBox.entitlements; sourceTree = "<group>"; };
 		2C053E8D288095A8002E53C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C053E94288096E5002E53C0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2C053E96288096EF002E53C0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2C053E9928809723002E53C0 /* pre_compile.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = pre_compile.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,8 +45,11 @@
 		2C053E74288095A5002E53C0 = {
 			isa = PBXGroup;
 			children = (
+				2C053E94288096E5002E53C0 /* LICENSE */,
+				2C053E96288096EF002E53C0 /* README.md */,
 				2C053E7F288095A5002E53C0 /* LaunchBox */,
 				2C053E7E288095A5002E53C0 /* Products */,
+				2C053E9828809700002E53C0 /* Scripts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,11 +64,11 @@
 		2C053E7F288095A5002E53C0 /* LaunchBox */ = {
 			isa = PBXGroup;
 			children = (
+				2C053E8B288095A8002E53C0 /* LaunchBox.entitlements */,
+				2C053E87288095A5002E53C0 /* ContentView.swift */,
 				2C053E80288095A5002E53C0 /* LaunchBoxApp.swift */,
 				2C053E82288095A5002E53C0 /* Persistence.swift */,
-				2C053E87288095A5002E53C0 /* ContentView.swift */,
 				2C053E89288095A8002E53C0 /* Assets.xcassets */,
-				2C053E8B288095A8002E53C0 /* LaunchBox.entitlements */,
 				2C053E84288095A5002E53C0 /* LaunchBox.xcdatamodeld */,
 				2C053E8C288095A8002E53C0 /* Preview Content */,
 			);
@@ -73,6 +81,14 @@
 				2C053E8D288095A8002E53C0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C053E9828809700002E53C0 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				2C053E9928809723002E53C0 /* pre_compile.sh */,
+			);
+			path = Scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +149,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C053E95288096E5002E53C0 /* LICENSE in Resources */,
 				2C053E8E288095A8002E53C0 /* Preview Assets.xcassets in Resources */,
+				2C053E97288096EF002E53C0 /* README.md in Resources */,
 				2C053E8A288095A8002E53C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
