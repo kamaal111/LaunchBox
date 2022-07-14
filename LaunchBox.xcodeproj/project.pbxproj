@@ -15,6 +15,13 @@
 		2C053E8E288095A8002E53C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C053E8D288095A8002E53C0 /* Preview Assets.xcassets */; };
 		2C053E95288096E5002E53C0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2C053E94288096E5002E53C0 /* LICENSE */; };
 		2C053E97288096EF002E53C0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2C053E96288096EF002E53C0 /* README.md */; };
+		2C6466C52880A7BC00378AF0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6466C42880A7BC00378AF0 /* Constants.swift */; };
+		2C6466C82880A81F00378AF0 /* ShrimpExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 2C6466C72880A81F00378AF0 /* ShrimpExtensions */; };
+		2C6466CB2880A8E900378AF0 /* NamiNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6466CA2880A8E900378AF0 /* NamiNavigator.swift */; };
+		2C6466CF2880ABD900378AF0 /* DeviceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6466CE2880ABD900378AF0 /* DeviceOrientation.swift */; };
+		2C6466D22880B17900378AF0 /* SalmonUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2C6466D12880B17900378AF0 /* SalmonUI */; };
+		2C6466D62880B1F300378AF0 /* MainExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6466D52880B1F300378AF0 /* MainExperience.swift */; };
+		2C6466D92880B2C200378AF0 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6466D82880B2C200378AF0 /* DeviceType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,11 @@
 		2C053E94288096E5002E53C0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2C053E96288096EF002E53C0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2C053E9928809723002E53C0 /* pre_compile.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = pre_compile.sh; sourceTree = "<group>"; };
+		2C6466C42880A7BC00378AF0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2C6466CA2880A8E900378AF0 /* NamiNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamiNavigator.swift; sourceTree = "<group>"; };
+		2C6466CE2880ABD900378AF0 /* DeviceOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOrientation.swift; sourceTree = "<group>"; };
+		2C6466D52880B1F300378AF0 /* MainExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainExperience.swift; sourceTree = "<group>"; };
+		2C6466D82880B2C200378AF0 /* DeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C6466D22880B17900378AF0 /* SalmonUI in Frameworks */,
+				2C6466C82880A81F00378AF0 /* ShrimpExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +79,15 @@
 			isa = PBXGroup;
 			children = (
 				2C053E8B288095A8002E53C0 /* LaunchBox.entitlements */,
+				2C6466C42880A7BC00378AF0 /* Constants.swift */,
 				2C053E87288095A5002E53C0 /* ContentView.swift */,
 				2C053E80288095A5002E53C0 /* LaunchBoxApp.swift */,
 				2C053E89288095A8002E53C0 /* Assets.xcassets */,
 				2C6466C12880A33D00378AF0 /* Models */,
 				2C053E8C288095A8002E53C0 /* Preview Content */,
+				2C6466CD2880ABB400378AF0 /* SwiftUI */,
 				2C6466C32880A48700378AF0 /* Utilities */,
+				2C6466D32880B1AC00378AF0 /* View */,
 			);
 			path = LaunchBox;
 			sourceTree = "<group>";
@@ -95,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				2C6466C22880A34200378AF0 /* CoreData */,
+				2C6466C92880A8CC00378AF0 /* ViewModels */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -115,6 +133,47 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		2C6466C92880A8CC00378AF0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2C6466CA2880A8E900378AF0 /* NamiNavigator.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2C6466CD2880ABB400378AF0 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				2C6466D72880B2A000378AF0 /* EnvironmentValues */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		2C6466D32880B1AC00378AF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C6466D42880B1B800378AF0 /* Experiences */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C6466D42880B1B800378AF0 /* Experiences */ = {
+			isa = PBXGroup;
+			children = (
+				2C6466D52880B1F300378AF0 /* MainExperience.swift */,
+			);
+			path = Experiences;
+			sourceTree = "<group>";
+		};
+		2C6466D72880B2A000378AF0 /* EnvironmentValues */ = {
+			isa = PBXGroup;
+			children = (
+				2C6466CE2880ABD900378AF0 /* DeviceOrientation.swift */,
+				2C6466D82880B2C200378AF0 /* DeviceType.swift */,
+			);
+			path = EnvironmentValues;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,6 +190,10 @@
 			dependencies = (
 			);
 			name = LaunchBox;
+			packageProductDependencies = (
+				2C6466C72880A81F00378AF0 /* ShrimpExtensions */,
+				2C6466D12880B17900378AF0 /* SalmonUI */,
+			);
 			productName = LaunchBox;
 			productReference = 2C053E7D288095A5002E53C0 /* LaunchBox.app */;
 			productType = "com.apple.product-type.application";
@@ -159,6 +222,10 @@
 				Base,
 			);
 			mainGroup = 2C053E74288095A5002E53C0;
+			packageReferences = (
+				2C6466C62880A81F00378AF0 /* XCRemoteSwiftPackageReference "ShrimpExtensions" */,
+				2C6466D02880B17900378AF0 /* XCRemoteSwiftPackageReference "SalmonUI" */,
+			);
 			productRefGroup = 2C053E7E288095A5002E53C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,8 +254,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C6466CF2880ABD900378AF0 /* DeviceOrientation.swift in Sources */,
+				2C6466CB2880A8E900378AF0 /* NamiNavigator.swift in Sources */,
+				2C6466C52880A7BC00378AF0 /* Constants.swift in Sources */,
 				2C053E81288095A5002E53C0 /* LaunchBoxApp.swift in Sources */,
+				2C6466D62880B1F300378AF0 /* MainExperience.swift in Sources */,
 				2C053E86288095A5002E53C0 /* LaunchBox.xcdatamodeld in Sources */,
+				2C6466D92880B2C200378AF0 /* DeviceType.swift in Sources */,
 				2C053E88288095A5002E53C0 /* ContentView.swift in Sources */,
 				2C053E83288095A5002E53C0 /* Persistence.swift in Sources */,
 			);
@@ -321,8 +393,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortraitUpsideDown;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -353,8 +425,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortraitUpsideDown;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -392,6 +464,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C6466C62880A81F00378AF0 /* XCRemoteSwiftPackageReference "ShrimpExtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kamaal111/ShrimpExtensions.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		2C6466D02880B17900378AF0 /* XCRemoteSwiftPackageReference "SalmonUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kamaal111/SalmonUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C6466C72880A81F00378AF0 /* ShrimpExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C6466C62880A81F00378AF0 /* XCRemoteSwiftPackageReference "ShrimpExtensions" */;
+			productName = ShrimpExtensions;
+		};
+		2C6466D12880B17900378AF0 /* SalmonUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C6466D02880B17900378AF0 /* XCRemoteSwiftPackageReference "SalmonUI" */;
+			productName = SalmonUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		2C053E84288095A5002E53C0 /* LaunchBox.xcdatamodeld */ = {

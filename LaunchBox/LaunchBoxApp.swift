@@ -14,7 +14,11 @@ struct LaunchBoxApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                #if os(macOS)
+                .frame(minWidth: Constants.UI.mainViewMinimumSize.width, minHeight: Constants.UI.mainViewMinimumSize.height)
+                #endif
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .withDeviceOrientation()
         }
     }
 }

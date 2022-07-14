@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var namiNavigator = NamiNavigator()
+
     var body: some View {
-        NavigationView {
-            Text("List")
-            Text("Select an item")
-        }
+        MainExperience()
+            .environmentObject(namiNavigator)
     }
 }
 
